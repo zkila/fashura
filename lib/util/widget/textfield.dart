@@ -49,8 +49,8 @@ class _TTextFieldState extends State<TTextField> {
       decoration: InputDecoration(
         hintText: widget.hintText,
         helperText: password ? "Password must contain special character" : null,
-        helperStyle: TextStyle(fontSize: 12),
-        hintStyle: TextStyle(color: dark ? TColors.grey : TColors.darkerGrey),
+        helperStyle: const TextStyle(fontSize: 12, color: TColors.white),
+        hintStyle: TextStyle(color: dark ? TColors.brown1 : TColors.brown9),
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
         ),
