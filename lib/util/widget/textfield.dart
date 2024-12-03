@@ -73,7 +73,7 @@ class _TTextFieldState extends State<TTextField> {
               )
             : null,
         filled: true,
-        fillColor: dark ? Colors.black : Colors.white,
+        fillColor: dark ? TColors.brown9 : TColors.brown1,
       ),
     );
   }
