@@ -5,7 +5,7 @@ import 'package:fashura/home/widgets/home_card_list_view.dart';
 import 'package:fashura/home/widgets/home_menu_buttons.dart';
 import 'package:fashura/util/colors.dart';
 import 'package:fashura/util/helper_functions.dart';
-import 'package:fashura/util/primary_header_container.dart';
+import 'package:fashura/util/widget/primary_header_container.dart';
 import 'package:fashura/util/sizes.dart';
 import 'package:fashura/util/widget/textfield.dart';
 import 'package:flutter/material.dart';
