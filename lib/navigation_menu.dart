@@ -26,10 +26,10 @@ class NavigationMenu extends StatelessWidget {
             //   scheduleController.fetchDate(DateTime.now());
             // }
           },
-          backgroundColor: darkMode ? TColors.black : TColors.white,
+          backgroundColor: darkMode ? TColors.brown9 : TColors.brown1,
           indicatorColor: darkMode
-              ? TColors.white.withOpacity(0.1)
-              : TColors.black.withOpacity(0.1),
+              ? TColors.primary.withOpacity(0.1)
+              : TColors.primary.withOpacity(0.1),
           destinations: const [
             NavigationDestination(icon: Icon(Icons.home_filled), label: 'Home'),
             NavigationDestination(

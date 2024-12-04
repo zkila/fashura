@@ -78,7 +78,7 @@ class HomePage extends StatelessWidget {
               child: Column(
                 children: [
                   const SizedBox(height: TSizes.spaceBtwSections),
-                  const HomeAppbar(),
+                  HomeAppbar(),
                   Padding(
                     padding: EdgeInsets.symmetric(
                         horizontal: TSizes.md, vertical: TSizes.sm),

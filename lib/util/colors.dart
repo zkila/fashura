@@ -11,7 +11,7 @@ class TColors {
   static const Color brown6 = Color(0xFFa65a1d);
   static const Color brown7 = Color(0xFF8a4816);
   static const Color brown8 = Color(0xFF6e370f);
-  static const Color brown9 = Color(0xFF532809); // Darkest brown
+  static const Color brown9 = Color.fromARGB(255, 53, 40, 30); // Darkest brown
 
   // Blue Colors
   static const Color blue1 = Color(0xFFe5f1ff);
