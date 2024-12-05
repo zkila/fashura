@@ -1,4 +1,5 @@
 import 'package:fashura/home/controller/home_controller.dart';
+import 'package:fashura/product/product.dart';
 import 'package:fashura/util/colors.dart';
 import 'package:fashura/util/helper_functions.dart';
 import 'package:fashura/util/sizes.dart';
@@ -29,18 +30,20 @@ class HomeCardListView extends StatelessWidget {
                   const BouncingScrollPhysics(), // Optional: for smooth scrolling
               itemCount: listPerbaikanController.listPerbaikan.length,
               itemBuilder: (context, index) {
-                // Create a shuffled list of items for this build
-                var shuffledList =
-                    List<ListCheck>.from(listPerbaikanController.listPerbaikan);
-                shuffledList.shuffle(); // Shuffle the copied list
-
                 var itemPerbaikan =
-                    shuffledList[index]; // Use the shuffled list
+                    listPerbaikanController.listPerbaikan[index];
 
                 return GestureDetector(
                     onTap: () {
                       // Handle on tap action here
-                      debugPrint('pencet ${itemPerbaikan.name}');
+                      // debugPrint('pencet ${itemPerbaikan.name}');
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) =>
+                              ProductScreen(homedata: itemPerbaikan),
+                        ),
+                      );
                     },
                     child: Card(
                       margin: const EdgeInsets.symmetric(horizontal: TSizes.sm),

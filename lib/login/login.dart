@@ -1,4 +1,3 @@
-import 'package:fashura/home/home.dart';
 import 'package:fashura/navigation_menu.dart';
 import 'package:fashura/util/colors.dart';
 import 'package:fashura/util/sizes.dart';
