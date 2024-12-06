@@ -120,7 +120,12 @@ class ProfilePage extends StatelessWidget {
                 text1: 'Wallet',
                 text2: 'Coupons',
                 text3: 'Coins',
-                function: () => debugPrint('tes'),
+                function: () => Get.snackbar(
+                  'Error!',
+                  'Sorry, not available yet',
+                  backgroundColor: Colors.red,
+                  colorText: Colors.white,
+                ),
               ),
               const Divider(),
               ProfileCard(
@@ -132,7 +137,12 @@ class ProfilePage extends StatelessWidget {
                 text1: 'Packed',
                 text2: 'Delivered',
                 text3: 'Rated',
-                function: () => debugPrint('tes'),
+                function: () => Get.snackbar(
+                  'Error!',
+                  'Sorry, not available yet',
+                  backgroundColor: Colors.red,
+                  colorText: Colors.white,
+                ),
               ),
               const Divider(),
               const SizedBox(
@@ -166,6 +176,12 @@ class ProfilePage extends StatelessWidget {
                 child: ElevatedButton(
                   onPressed: () async {
                     Get.offAll(() => LoginPage());
+                    Get.snackbar(
+                      'Success',
+                      'Successfully signed out',
+                      backgroundColor: Colors.green,
+                      colorText: Colors.white,
+                    );
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: TColors.error,

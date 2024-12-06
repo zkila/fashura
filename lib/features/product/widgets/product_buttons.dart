@@ -3,6 +3,7 @@
 import 'package:fashura/util/colors.dart';
 import 'package:fashura/util/sizes.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class ProductButtons extends StatelessWidget {
   const ProductButtons({
@@ -18,6 +19,7 @@ class ProductButtons extends StatelessWidget {
           onPressed: () {
             // Get.to(const ScannerScreen());
             debugPrint('tes add cart');
+            Get.snackbar('Success!', 'Added to Cart');
           },
           style: ElevatedButton.styleFrom(
             backgroundColor: TColors.primary,
@@ -75,6 +77,12 @@ class ProductButtons extends StatelessWidget {
           onPressed: () {
             // Get.to(const ScannerScreen());
             debugPrint('tes add cart');
+            Get.snackbar(
+              'Error!',
+              'Sorry, not available yet',
+              backgroundColor: Colors.red,
+              colorText: Colors.white,
+            );
           },
           child: Row(
             mainAxisSize: MainAxisSize.min,

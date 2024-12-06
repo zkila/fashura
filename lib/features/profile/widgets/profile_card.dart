@@ -3,6 +3,7 @@
 import 'package:fashura/util/colors.dart';
 import 'package:fashura/util/sizes.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class ProfileCard extends StatelessWidget {
   const ProfileCard(
@@ -29,52 +30,62 @@ class ProfileCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Card(
-      margin: EdgeInsets.symmetric(horizontal: TSizes.sm),
-      color: dark ? TColors.darkerGrey : TColors.lightGrey,
-      elevation: 4,
-      clipBehavior: Clip.hardEdge,
-      child: SizedBox(
-        width: double.infinity, // Adjust width for horizontal layout
-        height: 220, // Take full height
-        child: Padding(
-          padding: const EdgeInsets.all(14.0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              Text(
-                title,
-                style: Theme.of(context).textTheme.headlineSmall!.apply(
-                    color: dark ? TColors.brown1 : TColors.primary,
-                    fontWeightDelta: 0,
-                    fontSizeDelta: -1),
-              ),
-              Divider(
-                thickness: 2,
-                color: dark ? TColors.brown1 : TColors.brown9,
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: [
-                  ProfileCardButton(
-                      function: function,
-                      dark: dark,
-                      icon1: icon1,
-                      text1: text1),
-                  ProfileCardButton(
-                      function: function,
-                      dark: dark,
-                      icon1: icon2,
-                      text1: text2),
-                  ProfileCardButton(
-                      function: function,
-                      dark: dark,
-                      icon1: icon3,
-                      text1: text3),
-                ],
-              ),
-            ],
+    return GestureDetector(
+      onTap: () {
+        Get.snackbar(
+          'Error!',
+          'Sorry, not available yet',
+          backgroundColor: Colors.red,
+          colorText: Colors.white,
+        );
+      },
+      child: Card(
+        margin: EdgeInsets.symmetric(horizontal: TSizes.sm),
+        color: dark ? TColors.darkerGrey : TColors.lightGrey,
+        elevation: 4,
+        clipBehavior: Clip.hardEdge,
+        child: SizedBox(
+          width: double.infinity, // Adjust width for horizontal layout
+          height: 220, // Take full height
+          child: Padding(
+            padding: const EdgeInsets.all(14.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Text(
+                  title,
+                  style: Theme.of(context).textTheme.headlineSmall!.apply(
+                      color: dark ? TColors.brown1 : TColors.primary,
+                      fontWeightDelta: 0,
+                      fontSizeDelta: -1),
+                ),
+                Divider(
+                  thickness: 2,
+                  color: dark ? TColors.brown1 : TColors.brown9,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    ProfileCardButton(
+                        function: function,
+                        dark: dark,
+                        icon1: icon1,
+                        text1: text1),
+                    ProfileCardButton(
+                        function: function,
+                        dark: dark,
+                        icon1: icon2,
+                        text1: text2),
+                    ProfileCardButton(
+                        function: function,
+                        dark: dark,
+                        icon1: icon3,
+                        text1: text3),
+                  ],
+                ),
+              ],
+            ),
           ),
         ),
       ),

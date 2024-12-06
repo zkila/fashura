@@ -1,16 +1,13 @@
 # fashura
 
-A new Flutter project.
+A Fashion App
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![](/assets/ui/1.jpg)
+![](/assets/ui/2.jpg)
+![](/assets/ui/3.jpg)
+![](/assets/ui/4.jpg)
+![](/assets/ui/5.jpg)
+![](/assets/ui/6.jpg)
+![](/assets/ui/7.jpg)
+![](/assets/ui/8.jpg)
+![](/assets/ui/9.jpg)

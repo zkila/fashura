@@ -97,6 +97,12 @@ class LoginPage extends StatelessWidget {
                                         password == 'asdfqwer') {
                                       debugPrint('login tes');
                                       Get.offAll(() => const NavigationMenu());
+                                      Get.snackbar(
+                                        'Success',
+                                        'Successfully signed in',
+                                        backgroundColor: Colors.green,
+                                        colorText: Colors.white,
+                                      );
                                     } else {
                                       Get.snackbar('Error', 'Login failed');
                                     }

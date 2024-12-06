@@ -33,6 +33,12 @@ class HomePage extends StatelessWidget {
       'function': () {
         // Get.to(() => Report());
         debugPrint('catalogue');
+        Get.snackbar(
+          'Error!',
+          'Sorry, not available yet',
+          backgroundColor: Colors.red,
+          colorText: Colors.white,
+        );
       },
     },
     {
@@ -41,6 +47,12 @@ class HomePage extends StatelessWidget {
       'function': () {
         // Get.to(() => BeritaAcara());
         debugPrint('documents');
+        Get.snackbar(
+          'Error!',
+          'Sorry, not available yet',
+          backgroundColor: Colors.red,
+          colorText: Colors.white,
+        );
       },
     },
     {
@@ -57,6 +69,12 @@ class HomePage extends StatelessWidget {
       'function': () {
         // Get.to(() => Report());
         debugPrint('campaign');
+        Get.snackbar(
+          'Error!',
+          'Sorry, not available yet',
+          backgroundColor: Colors.red,
+          colorText: Colors.white,
+        );
       },
     },
     {
@@ -65,6 +83,12 @@ class HomePage extends StatelessWidget {
       'function': () {
         // Get.to(() => Approval());
         debugPrint('settings');
+        Get.snackbar(
+          'Error!',
+          'Sorry, not available yet',
+          backgroundColor: Colors.red,
+          colorText: Colors.white,
+        );
       },
     },
   ];
