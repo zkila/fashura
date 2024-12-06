@@ -1,6 +1,6 @@
-import 'package:fashura/feed/feed.dart';
-import 'package:fashura/home/home.dart';
-import 'package:fashura/profile/profile.dart';
+import 'package:fashura/features/feed/feed.dart';
+import 'package:fashura/features/home/home.dart';
+import 'package:fashura/features/profile/profile.dart';
 import 'package:fashura/util/colors.dart';
 import 'package:fashura/util/helper_functions.dart';
 import 'package:flutter/material.dart';

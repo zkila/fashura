@@ -1,13 +1,14 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
-import 'package:fashura/home/controller/home_controller.dart';
-import 'package:fashura/product/controller/quantity_controller.dart';
-import 'package:fashura/product/controller/size_selector_controller.dart';
-import 'package:fashura/product/controller/variation_controller.dart';
+import 'package:fashura/features/home/controller/home_controller.dart';
+import 'package:fashura/features/product/controller/quantity_controller.dart';
+import 'package:fashura/features/product/controller/size_selector_controller.dart';
+import 'package:fashura/features/product/controller/variation_controller.dart';
 
-import 'package:fashura/product/widgets/product_appbar.dart';
-import 'package:fashura/product/widgets/product_buttons.dart';
-import 'package:fashura/product/widgets/product_filter.dart';
+import 'package:fashura/features/product/widgets/product_appbar.dart';
+import 'package:fashura/features/product/widgets/product_buttons.dart';
+import 'package:fashura/features/product/widgets/product_filter.dart';
+import 'package:fashura/util/colors.dart';
 import 'package:fashura/util/helper_functions.dart';
 import 'package:fashura/util/sizes.dart';
 import 'package:fashura/util/spacing_styles.dart';
@@ -99,7 +100,7 @@ class ProductScreen extends StatelessWidget {
                             .headlineMedium
                             ?.copyWith(
                               fontWeight: FontWeight.w600,
-                              color: dark ? Colors.white : Colors.white,
+                              color: dark ? Colors.white : TColors.brown8,
                             ),
                       ),
                       SizedBox(
@@ -112,7 +113,7 @@ class ProductScreen extends StatelessWidget {
                             .headlineMedium
                             ?.copyWith(
                                 fontWeight: FontWeight.w600,
-                                color: dark ? Colors.white : Colors.white,
+                                color: dark ? Colors.white : TColors.brown8,
                                 fontSize: TSizes.fontSizeMd),
                       ),
                       SizedBox(
@@ -125,7 +126,7 @@ class ProductScreen extends StatelessWidget {
                             .headlineMedium
                             ?.copyWith(
                                 fontWeight: FontWeight.w600,
-                                color: dark ? Colors.white : Colors.white,
+                                color: dark ? Colors.white : TColors.brown8,
                                 fontSize: TSizes.fontSizeMd),
                       ),
                       SizedBox(

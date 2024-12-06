@@ -1,8 +1,8 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
-import 'package:fashura/feed/controller/feed_controller.dart';
-import 'package:fashura/feed/widget/feed_post.dart';
-import 'package:fashura/feed/widget/feed_user.dart';
+import 'package:fashura/features/feed/controller/feed_controller.dart';
+import 'package:fashura/features/feed/widget/feed_post.dart';
+import 'package:fashura/features/feed/widget/feed_user.dart';
 import 'package:fashura/util/helper_functions.dart';
 import 'package:fashura/util/sizes.dart';
 import 'package:flutter/material.dart';

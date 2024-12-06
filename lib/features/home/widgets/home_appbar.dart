@@ -1,6 +1,6 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
-import 'package:fashura/home/widgets/notif_cart.dart';
+import 'package:fashura/features/home/widgets/notif_cart.dart';
 import 'package:fashura/navigation_menu.dart';
 import 'package:fashura/util/colors.dart';
 import 'package:fashura/util/widget/appbar.dart';

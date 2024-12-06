@@ -1,9 +1,9 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
-import 'package:fashura/login/login.dart';
-import 'package:fashura/profile/widgets/profile_card.dart';
-import 'package:fashura/profile/widgets/profile_menu.dart';
-import 'package:fashura/profile/widgets/profile_app_bar.dart';
+import 'package:fashura/features/login/login.dart';
+import 'package:fashura/features/profile/widgets/profile_card.dart';
+import 'package:fashura/features/profile/widgets/profile_menu.dart';
+import 'package:fashura/features/profile/widgets/profile_app_bar.dart';
 import 'package:fashura/util/colors.dart';
 import 'package:fashura/util/helper_functions.dart';
 import 'package:fashura/util/sizes.dart';

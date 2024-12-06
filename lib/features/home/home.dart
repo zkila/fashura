@@ -1,14 +1,17 @@
 // ignore_for_file: prefer_const_constructors
 
-import 'package:fashura/home/widgets/home_appbar.dart';
-import 'package:fashura/home/widgets/home_card_list_view.dart';
-import 'package:fashura/home/widgets/home_menu_buttons.dart';
+import 'package:fashura/features/courses/courses.dart';
+import 'package:fashura/features/home/widgets/home_appbar.dart';
+import 'package:fashura/features/home/widgets/home_card_list_view.dart';
+import 'package:fashura/features/home/widgets/home_menu_buttons.dart';
+import 'package:fashura/features/store/store.dart';
 import 'package:fashura/util/colors.dart';
 import 'package:fashura/util/helper_functions.dart';
 import 'package:fashura/util/widget/primary_header_container.dart';
 import 'package:fashura/util/sizes.dart';
 import 'package:fashura/util/widget/textfield.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class HomePage extends StatelessWidget {
   HomePage({super.key});
@@ -20,7 +23,7 @@ class HomePage extends StatelessWidget {
       'icon': Icons.store_mall_directory_rounded,
       'text': 'Store',
       'function': () {
-        // Get.to(() => Report());
+        Get.to(() => StorePage());
         debugPrint('store');
       },
     },
@@ -44,7 +47,7 @@ class HomePage extends StatelessWidget {
       'icon': Icons.assignment_ind_outlined,
       'text': 'Courses',
       'function': () {
-        // Get.to(() => ListAssets());
+        Get.to(() => CoursesPage());
         debugPrint('courses');
       },
     },

@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
-import 'package:fashura/feed/widget/feed_appbar.dart';
-import 'package:fashura/feed/widget/feed_card_list_view.dart';
+import 'package:fashura/features/feed/widget/feed_appbar.dart';
+import 'package:fashura/features/feed/widget/feed_card_list_view.dart';
 import 'package:fashura/util/sizes.dart';
 import 'package:fashura/util/widget/primary_header_nongradient.dart';
 import 'package:flutter/material.dart';
@@ -13,33 +13,37 @@ class FeedPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: SingleChildScrollView(
-            child: Column(children: [
-      // === Custom Header ===
-      TPrimaryHeaderContainerNonGradient(
+      body: SingleChildScrollView(
         child: Column(
           children: [
-            const TScheduleAppBar(),
-            const SizedBox(
-              height: 30,
+            // === Custom Header ===
+            TPrimaryHeaderContainerNonGradient(
+              child: Column(
+                children: [
+                  const TScheduleAppBar(),
+                  const SizedBox(
+                    height: 30,
+                  ),
+                  const SizedBox(height: 6),
+                ],
+              ),
             ),
-            const SizedBox(height: 6),
+            FeedFilter(),
+            SizedBox(
+              height: TSizes.md,
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: TSizes.md),
+              child: Column(
+                children: [
+                  FeedCardListView(),
+                ],
+              ),
+            ),
           ],
         ),
       ),
-      FeedFilter(),
-      SizedBox(
-        height: TSizes.md,
-      ),
-      Padding(
-        padding: const EdgeInsets.symmetric(horizontal: TSizes.md),
-        child: Column(
-          children: [
-            FeedCardListView(),
-          ],
-        ),
-      ),
-    ])));
+    );
   }
 }
 

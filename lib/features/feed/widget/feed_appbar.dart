@@ -1,6 +1,4 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
-
-import 'package:fashura/home/widgets/notif_cart.dart';
+import 'package:fashura/features/home/widgets/notif_cart.dart';
 import 'package:fashura/navigation_menu.dart';
 import 'package:fashura/util/colors.dart';
 import 'package:fashura/util/helper_functions.dart';
@@ -8,13 +6,16 @@ import 'package:fashura/util/widget/appbar.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class TProfileAppBar extends StatelessWidget {
-  const TProfileAppBar({super.key});
+class TScheduleAppBar extends StatelessWidget {
+  const TScheduleAppBar({
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
-    final dark = THelperFunctions.isDarkMode(context);
     final controller = Get.find<NavigationController>();
+    final dark = THelperFunctions.isDarkMode(context);
+
     return TAppBar(
         title: Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -35,7 +36,7 @@ class TProfileAppBar extends StatelessWidget {
           ],
         ),
         Text(
-          'Profile',
+          'Feed',
           style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                 fontWeight: FontWeight.w500,
                 color: dark ? Colors.white : Colors.white,

@@ -1,5 +1,5 @@
-import 'package:fashura/home/controller/home_controller.dart';
-import 'package:fashura/product/product.dart';
+import 'package:fashura/features/home/controller/home_controller.dart';
+import 'package:fashura/features/product/product.dart';
 import 'package:fashura/util/colors.dart';
 import 'package:fashura/util/helper_functions.dart';
 import 'package:fashura/util/sizes.dart';
